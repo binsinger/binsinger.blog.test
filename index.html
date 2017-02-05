@@ -92,13 +92,12 @@
 <li>这样就可以在此域名上访问了(for example:binsinger.github.io)  </li>
 </ul>
 <h2 id="使用-hexo-结合github-pages搭建一个blog"><a href="#使用-hexo-结合github-pages搭建一个blog" class="headerlink" title="使用 hexo 结合github pages搭建一个blog"></a>使用 hexo 结合github pages搭建一个blog</h2><h3 id="use-npm-insatll-运行本地服务端"><a href="#use-npm-insatll-运行本地服务端" class="headerlink" title="use npm insatll 运行本地服务端"></a>use npm insatll 运行本地服务端</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div><div class="line">hexo init blog //可以指定路径</div><div class="line"><span class="built_in">cd</span> blog</div><div class="line">npm install // 可省略</div><div class="line">hexo server //run at localhost:4000</div></pre></td></tr></table></figure>
-<h3 id="创建一篇新文章"><a href="#创建一篇新文章" class="headerlink" title="创建一篇新文章"></a>创建一篇新文章</h3><ul>
-<li>不结束服务端cmd窗口,在blog目录下运行新的cmd命令窗口<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new filename//创建文件就用此命令</div></pre></td></tr></table></figure>
-</li>
-</ul>
 <h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><ul>
-<li>在_config.yml 文件中设置配置,找到deploy 配置如下:<br>deploy:<br> type: git<br> repo: <a href="https://binsinger:12345678@github.com/binsinger/binsinger.github.io.git" target="_blank" rel="external">https://binsinger:12345678@github.com/binsinger/binsinger.github.io.git</a><pre><code>//https://username:password@repositoryurl
-</code></pre> //assure this roposotory is clean<h3 id="安装-hexo-deployer-git"><a href="#安装-hexo-deployer-git" class="headerlink" title="安装 hexo-deployer-git"></a>安装 hexo-deployer-git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save // 在blog目录下</div></pre></td></tr></table></figure>
+<li>在_config.yml 文件中设置配置,找到deploy 配置如下:<br>deploy:<br> type: git<br> repo: <a href="https://binsinger:12345678@github.com/binsinger/binsinger.github.io.git" target="_blank" rel="external">https://binsinger:12345678@github.com/binsinger/binsinger.github.io.git</a><br> //<a href="https://username:password@repositoryurl" target="_blank" rel="external">https://username:password@repositoryurl</a><br> //assure this repository is clean</li>
+</ul>
+<h3 id="安装-hexo-deployer-git"><a href="#安装-hexo-deployer-git" class="headerlink" title="安装 hexo-deployer-git"></a>安装 hexo-deployer-git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save // 在blog目录下</div></pre></td></tr></table></figure>
+<h3 id="创建一篇新blog"><a href="#创建一篇新blog" class="headerlink" title="创建一篇新blog"></a>创建一篇新blog</h3><ul>
+<li>不结束服务端cmd窗口,在blog目录下运行新的cmd命令窗口<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new filename//创建文件就用此命令</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="生成后自动部署网站"><a href="#生成后自动部署网站" class="headerlink" title="生成后自动部署网站"></a>生成后自动部署网站</h3><pre><code class="bash">hexo deploy
