@@ -27,7 +27,7 @@ push
 这样就可以在此域名上访问了(for example:binsinger.github.io)  
 
 使用 hexo 结合github pages搭建一个blog+">
-<meta property="og:updated_time" content="2017-02-05T13:40:30.963Z">
+<meta property="og:updated_time" content="2017-02-05T13:42:18.563Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="review-note">
 <meta name="twitter:description" content="总结一下如何处理搭建一个静态bloggithub 域名
@@ -127,17 +127,20 @@ push
 </li>
 <li><p>自动发布搭建的blog</p>
 <ul>
-<li>在_config.yml 文件中设置配置,找到deploy 配置如下:<br>deploy:<br>type: git<br>repo: <a href="https://binsinger:7890uiop@github.com/binsinger/binsinger.github.io.git" target="_blank" rel="external">https://binsinger:7890uiop@github.com/binsinger/binsinger.github.io.git</a><br>  //<a href="https://username:password@repositoryurl" target="_blank" rel="external">https://username:password@repositoryurl</a><br>  //assure this roposotory is clean<br>+安装 hexo-deployer-git<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save // 在blog目录下</div></pre></td></tr></table></figure>
-</li>
+<li>在_config.yml 文件中设置配置,找到deploy 配置如下:<br>deploy:<br>type: git<br>repo: <a href="https://binsinger:7890uiop@github.com/binsinger/binsinger.github.io.git" target="_blank" rel="external">https://binsinger:7890uiop@github.com/binsinger/binsinger.github.io.git</a><br>  //<a href="https://username:password@repositoryurl" target="_blank" rel="external">https://username:password@repositoryurl</a><br>  //assure this roposotory is clean</li>
 </ul>
 </li>
-</ul>
-<p>+部署</p>
+<li><p>安装 hexo-deployer-git</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save // 在blog目录下</div></pre></td></tr></table></figure>
+</li>
+<li><p>部署</p>
 <pre><code class="bash">hexo deploy
 //ususally use
 hexo generate --deploy
 hexo deploy --generate
 </code></pre>
+</li>
+</ul>
 
       
     </div>

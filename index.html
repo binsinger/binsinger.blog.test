@@ -101,17 +101,20 @@
 </li>
 <li><p>自动发布搭建的blog</p>
 <ul>
-<li>在_config.yml 文件中设置配置,找到deploy 配置如下:<br>deploy:<br>type: git<br>repo: <a href="https://binsinger:7890uiop@github.com/binsinger/binsinger.github.io.git" target="_blank" rel="external">https://binsinger:7890uiop@github.com/binsinger/binsinger.github.io.git</a><br>  //<a href="https://username:password@repositoryurl" target="_blank" rel="external">https://username:password@repositoryurl</a><br>  //assure this roposotory is clean<br>+安装 hexo-deployer-git<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save // 在blog目录下</div></pre></td></tr></table></figure>
-</li>
+<li>在_config.yml 文件中设置配置,找到deploy 配置如下:<br>deploy:<br>type: git<br>repo: <a href="https://binsinger:7890uiop@github.com/binsinger/binsinger.github.io.git" target="_blank" rel="external">https://binsinger:7890uiop@github.com/binsinger/binsinger.github.io.git</a><br>  //<a href="https://username:password@repositoryurl" target="_blank" rel="external">https://username:password@repositoryurl</a><br>  //assure this roposotory is clean</li>
 </ul>
 </li>
-</ul>
-<p>+部署</p>
+<li><p>安装 hexo-deployer-git</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save // 在blog目录下</div></pre></td></tr></table></figure>
+</li>
+<li><p>部署</p>
 <pre><code class="bash">hexo deploy
 //ususally use
 hexo generate --deploy
 hexo deploy --generate
 </code></pre>
+</li>
+</ul>
 
       
     </div>
