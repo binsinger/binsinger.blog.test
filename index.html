@@ -97,9 +97,12 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//const express = require('express');</span></div><div class="line"><span class="keyword">import</span> express <span class="keyword">from</span> <span class="string">'express'</span>;</div><div class="line"><span class="keyword">const</span> app = express();</div><div class="line">app.get(<span class="string">''</span>,(req,res) =&gt; &#123;</div><div class="line">  res.end(<span class="string">'hello world'</span>)</div><div class="line">  &#125;)</div><div class="line">app.listen(<span class="number">3000</span>,() =&gt; &#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'server is running at 3000'</span>);</div><div class="line">  &#125;)</div></pre></td></tr></table></figure>
 </li>
 <li><p>配置babel</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save-dev babel-preset-es2015</div></pre></td></tr></table></figure>
+<ul>
+<li>首先创建.babelrc文件<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save-dev babel-preset-es2015</div></pre></td></tr></table></figure>
 </li>
-<li><p>npm安装依赖</p>
+</ul>
+</li>
+<li><p>npm安装依赖(在生产环境时用)</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --production //只安装dependencies 不安装devDependecies</div></pre></td></tr></table></figure>
 </li>
 <li><p>安装babel-register实时转码</p>
@@ -114,10 +117,28 @@
 <li><p>在package.json里配置 start bulid dev 区分开发和生产环境</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&quot;dev&quot;:&quot;node main.js&quot;,</div><div class="line">&quot;build&quot;:&apos;babel src -d dist&apos; //js 文件都放到src里</div><div class="line">&quot;start&quot;:&quot;node dist/app.js&quot;</div><div class="line">&quot;prestart&quot;:&quot;npm run build&quot;</div><div class="line">&quot;poststart&quot;:&quot;&quot;</div></pre></td></tr></table></figure>
 </li>
-</ul>
-<p>+安装依赖<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save bootstrap font-awesome nprogress jquery</div></pre></td></tr></table></figure></p>
+<li><p>copy文件到项目目录下</p>
 <ul>
-<li>首页搭建</li>
+<li>public</li>
+<li>view</li>
+<li>src</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>安装依赖,驱动 index页面</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save bootstrap font-awesome nprogress jquery</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装 ejs 模板引擎</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save ejs</div></pre></td></tr></table></figure>
+</li>
+<li><p>首页搭建 node node node</p>
+<ul>
+<li>config?</li>
+<li>set? use?</li>
+<li>path?</li>
+</ul>
+</li>
 </ul>
 
       
