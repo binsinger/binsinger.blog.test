@@ -61,6 +61,78 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-onlineEdu" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/07/onlineEdu/" class="article-date">
+  <time datetime="2017-02-07T11:01:24.000Z" itemprop="datePublished">2017-02-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/07/onlineEdu/">onlineEdu</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>1 新建项目仓库(edu)</p>
+<ul>
+<li>并把静态页面放到目录下view文件夹中 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init edu</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>2 项目初始化</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm init -y</div><div class="line">npm install --save express</div></pre></td></tr></table></figure>
+</li>
+<li><p>搭建服务器</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//const express = require('express');</span></div><div class="line"><span class="keyword">import</span> express <span class="keyword">from</span> <span class="string">'express'</span>;</div><div class="line"><span class="keyword">const</span> app = express();</div><div class="line">app.get(<span class="string">''</span>,(req,res) =&gt; &#123;</div><div class="line">  res.end(<span class="string">'hello world'</span>)</div><div class="line">  &#125;)</div><div class="line">app.listen(<span class="number">3000</span>,() =&gt; &#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'server is running at 3000'</span>);</div><div class="line">  &#125;)</div></pre></td></tr></table></figure>
+</li>
+<li><p>配置babel</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save-dev babel-preset-es2015</div></pre></td></tr></table></figure>
+</li>
+<li><p>npm安装依赖</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --production //只安装dependencies 不安装devDependecies</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装babel-register实时转码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save-dev babel-register</div></pre></td></tr></table></figure>
+</li>
+<li><p>main.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>(<span class="string">'babel-register'</span>);</div><div class="line"><span class="built_in">require</span>(<span class="string">'./app'</span>);</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装转码工具babel-cli</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install --save-dev babel-cli</div><div class="line">npm install --global babel-cli</div></pre></td></tr></table></figure>
+</li>
+<li><p>在package.json里配置 start bulid dev 区分开发和生产环境</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&quot;dev&quot;:&quot;node main.js&quot;,</div><div class="line">&quot;build&quot;:&apos;babel src -d dist&apos; //js 文件都放到src里</div><div class="line">&quot;start&quot;:&quot;node dist/app.js&quot;</div><div class="line">&quot;prestart&quot;:&quot;npm run build&quot;</div><div class="line">&quot;poststart&quot;:&quot;&quot;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>+安装依赖<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save bootstrap font-awesome nprogress jquery</div></pre></td></tr></table></figure></p>
+<ul>
+<li>首页搭建</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/07/onlineEdu/" data-id="ciyvocgae0000o4f7epdgkqto" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-review-note" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/02/05/review-note/" class="article-date">
@@ -109,7 +181,7 @@ hexo deploy --generate
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/05/review-note/" data-id="ciysnpjdf0001s8f7w4oan52w" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/02/05/review-note/" data-id="ciyvocgcp0003o4f7z9gp3inz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -145,7 +217,7 @@ hexo deploy --generate
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/05/入门指南/" data-id="ciysnpjdl0002s8f7u37arnc4" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/02/05/入门指南/" data-id="ciyvocgca0002o4f7v5clcwzp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -190,7 +262,7 @@ hexo deploy --generate
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/05/hello-world/" data-id="ciysnpjd80000s8f7zq1y4mgx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/02/05/hello-world/" data-id="ciyvocgc60001o4f70f7swk9c" class="article-share-link">Share</a>
       
       
     </footer>
@@ -228,6 +300,10 @@ hexo deploy --generate
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/02/07/onlineEdu/">onlineEdu</a>
+          </li>
         
           <li>
             <a href="/2017/02/05/review-note/">review-note</a>
