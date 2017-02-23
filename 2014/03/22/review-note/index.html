@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>review-note | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="总结一下如何处理搭建一个静态bloggithub pages
+在github上新建一个 username.github.io 仓库
+clone到本地,
+新建一个 index.html 文件,添加一些内容和样式
+do “add” and “commit”
+do push
+这样就可以在此域名上访问了(for example:binsinger.github.io)  
+
+使用 hexo 结合githu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="review-note">
+<meta property="og:url" content="http://yoursite.com/2014/03/22/review-note/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="总结一下如何处理搭建一个静态bloggithub pages
+在github上新建一个 username.github.io 仓库
+clone到本地,
+新建一个 index.html 文件,添加一些内容和样式
+do “add” and “commit”
+do push
+这样就可以在此域名上访问了(for example:binsinger.github.io)  
+
+使用 hexo 结合githu">
+<meta property="og:updated_time" content="2017-02-23T05:04:21.568Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="review-note">
+<meta name="twitter:description" content="总结一下如何处理搭建一个静态bloggithub pages
+在github上新建一个 username.github.io 仓库
+clone到本地,
+新建一个 index.html 文件,添加一些内容和样式
+do “add” and “commit”
+do push
+这样就可以在此域名上访问了(for example:binsinger.github.io)  
+
+使用 hexo 结合githu">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-review-note" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/03/22/review-note/" class="article-date">
+  <time datetime="2014-03-22T12:37:24.000Z" itemprop="datePublished">2014-03-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      review-note
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="总结一下如何处理搭建一个静态blog"><a href="#总结一下如何处理搭建一个静态blog" class="headerlink" title="总结一下如何处理搭建一个静态blog"></a>总结一下如何处理搭建一个静态blog</h2><h2 id="github-pages"><a href="#github-pages" class="headerlink" title="github pages"></a>github pages</h2><ul>
+<li>在github上新建一个 username.github.io 仓库</li>
+<li>clone到本地,</li>
+<li>新建一个 index.html 文件,添加一些内容和样式</li>
+<li>do “add” and “commit”</li>
+<li>do push</li>
+<li>这样就可以在此域名上访问了(for example:binsinger.github.io)  </li>
+</ul>
+<h2 id="使用-hexo-结合github-pages搭建一个blog"><a href="#使用-hexo-结合github-pages搭建一个blog" class="headerlink" title="使用 hexo 结合github pages搭建一个blog"></a>使用 hexo 结合github pages搭建一个blog</h2><h3 id="use-npm-insatll-运行本地服务端"><a href="#use-npm-insatll-运行本地服务端" class="headerlink" title="use npm insatll 运行本地服务端"></a>use npm insatll 运行本地服务端</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div><div class="line">hexo init blog //可以指定路径</div><div class="line"><span class="built_in">cd</span> blog</div><div class="line">npm install // 可省略</div><div class="line">hexo server //run at localhost:4000</div></pre></td></tr></table></figure>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><ul>
+<li>在_config.yml 文件中设置配置,找到deploy 配置如下:<br>deploy:<br> type: git<br> repo: <a href="https://binsinger:12345678@github.com/binsinger/binsinger.github.io.git" target="_blank" rel="external">https://binsinger:12345678@github.com/binsinger/binsinger.github.io.git</a><br> //<a href="https://username:password@repositoryurl" target="_blank" rel="external">https://username:password@repositoryurl</a><br> //assure this repository is clean</li>
+</ul>
+<h3 id="安装-hexo-deployer-git"><a href="#安装-hexo-deployer-git" class="headerlink" title="安装 hexo-deployer-git"></a>安装 hexo-deployer-git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save // 在blog目录下</div></pre></td></tr></table></figure>
+<h3 id="创建一篇新blog"><a href="#创建一篇新blog" class="headerlink" title="创建一篇新blog"></a>创建一篇新blog</h3><ul>
+<li>不结束服务端cmd窗口,在blog目录下运行新的cmd命令窗口<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new filename//创建文件就用此命令</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="生成后自动部署网站"><a href="#生成后自动部署网站" class="headerlink" title="生成后自动部署网站"></a>生成后自动部署网站</h3><pre><code class="bash">hexo deploy
+//ususally use
+hexo generate --deploy
+hexo deploy --generate
+</code></pre>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2014/03/22/review-note/" data-id="cizhxiwke00007sf7nj72pilv" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2014/03/07/onlineEdu/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">onlineEdu</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">March 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">February 2014</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2014/03/22/review-note/">review-note</a>
+          </li>
+        
+          <li>
+            <a href="/2014/03/07/onlineEdu/">onlineEdu</a>
+          </li>
+        
+          <li>
+            <a href="/2014/03/05/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2014/02/05/入门指南/">入门指南</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

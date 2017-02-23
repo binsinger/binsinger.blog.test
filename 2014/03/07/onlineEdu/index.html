@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>onlineEdu | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1 新建项目仓库(edu)
+
+并把静态页面放到目录下view文件夹中 1git init edu
+
+
+
+2 项目初始化
+12npm init -ynpm install --save express
+
+搭建服务器
+123456789//const express = require(&apos;express&apos;);import express from &apos;express&apos;;const app = expr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="onlineEdu">
+<meta property="og:url" content="http://yoursite.com/2014/03/07/onlineEdu/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1 新建项目仓库(edu)
+
+并把静态页面放到目录下view文件夹中 1git init edu
+
+
+
+2 项目初始化
+12npm init -ynpm install --save express
+
+搭建服务器
+123456789//const express = require(&apos;express&apos;);import express from &apos;express&apos;;const app = expr">
+<meta property="og:updated_time" content="2017-02-23T05:04:44.616Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="onlineEdu">
+<meta name="twitter:description" content="1 新建项目仓库(edu)
+
+并把静态页面放到目录下view文件夹中 1git init edu
+
+
+
+2 项目初始化
+12npm init -ynpm install --save express
+
+搭建服务器
+123456789//const express = require(&apos;express&apos;);import express from &apos;express&apos;;const app = expr">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-onlineEdu" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/03/07/onlineEdu/" class="article-date">
+  <time datetime="2014-03-07T11:01:24.000Z" itemprop="datePublished">2014-03-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      onlineEdu
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>1 新建项目仓库(edu)</p>
+<ul>
+<li>并把静态页面放到目录下view文件夹中 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init edu</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>2 项目初始化</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm init -y</div><div class="line">npm install --save express</div></pre></td></tr></table></figure>
+</li>
+<li><p>搭建服务器</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//const express = require('express');</span></div><div class="line"><span class="keyword">import</span> express <span class="keyword">from</span> <span class="string">'express'</span>;</div><div class="line"><span class="keyword">const</span> app = express();</div><div class="line">app.get(<span class="string">''</span>,(req,res) =&gt; &#123;</div><div class="line">  res.end(<span class="string">'hello world'</span>)</div><div class="line">  &#125;)</div><div class="line">app.listen(<span class="number">3000</span>,() =&gt; &#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'server is running at 3000'</span>);</div><div class="line">  &#125;)</div></pre></td></tr></table></figure>
+</li>
+<li><p>配置babel</p>
+<ul>
+<li>首先创建.babelrc文件<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save-dev babel-preset-es2015</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>npm安装依赖(在生产环境时用)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --production //只安装dependencies 不安装devDependecies</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装babel-register实时转码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save-dev babel-register</div></pre></td></tr></table></figure>
+</li>
+<li><p>main.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>(<span class="string">'babel-register'</span>);</div><div class="line"><span class="built_in">require</span>(<span class="string">'./app'</span>);</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装转码工具babel-cli</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install --save-dev babel-cli</div><div class="line">npm install --global babel-cli</div></pre></td></tr></table></figure>
+</li>
+<li><p>在package.json里配置 start bulid dev 区分开发和生产环境</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&quot;dev&quot;:&quot;node main.js&quot;,</div><div class="line">&quot;build&quot;:&apos;babel src -d dist&apos; //js 文件都放到src里</div><div class="line">&quot;start&quot;:&quot;node dist/app.js&quot;</div><div class="line">&quot;prestart&quot;:&quot;npm run build&quot;</div><div class="line">&quot;poststart&quot;:&quot;&quot;</div></pre></td></tr></table></figure>
+</li>
+<li><p>copy文件到项目目录下</p>
+<ul>
+<li>public</li>
+<li>view</li>
+<li>src</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>安装依赖,驱动 index页面</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save bootstrap font-awesome nprogress jquery</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装 ejs 模板引擎</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save ejs</div></pre></td></tr></table></figure>
+</li>
+<li><p>首页搭建 node node node</p>
+<ul>
+<li>config?</li>
+<li>set? use?</li>
+<li>path?</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2014/03/07/onlineEdu/" data-id="cizhxiwl100037sf7u850tdew" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/03/22/review-note/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          review-note
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/03/05/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">March 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">February 2014</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2014/03/22/review-note/">review-note</a>
+          </li>
+        
+          <li>
+            <a href="/2014/03/07/onlineEdu/">onlineEdu</a>
+          </li>
+        
+          <li>
+            <a href="/2014/03/05/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2014/02/05/入门指南/">入门指南</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
